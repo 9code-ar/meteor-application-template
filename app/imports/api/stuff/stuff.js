@@ -1,5 +1,5 @@
 import { Mongo } from 'meteor/mongo';
-import { SimpleSchema } from 'meteor/aldeed:simple-schema';
+import SimpleSchema from 'simpl-schema';
 
 /* eslint-disable object-shorthand */
 
@@ -14,19 +14,19 @@ export const StuffSchema = new SimpleSchema({
     type: String,
     optional: false,
     max: 20,
-    autoform: {
-      group: 'Stuff',
-      placeholder: 'Bicycle',
-    },
+    // autoform: {
+    //   group: 'Stuff',
+    //   placeholder: 'Bicycle',
+    // },
   },
   quantity: {
     label: 'Quantity',
     type: Number,
     optional: false,
-    autoform: {
-      group: 'Stuff',
-      placeholder: '3',
-    },
+    // autoform: {
+    //   group: 'Stuff',
+    //   placeholder: '3',
+    // },
   },
 });
 
